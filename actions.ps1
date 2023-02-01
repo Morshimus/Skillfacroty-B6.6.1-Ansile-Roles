@@ -30,7 +30,7 @@ function ansiblePlaybook {
         [Parameter(Mandatory=$False)]
         [String]$privateKey = "~/.ssh/morsh_bastion_SSH",
         [Parameter(Mandatory=$False)]
-        [String]$Playbook = "./provisioning_web_admin.yaml",
+        [String]$Playbook = "./provisioning.yaml",
         [Parameter(Mandatory=$False,Position=0)]
         [string]$fileSecrets = '~/.vault_pass',
         [Parameter(Mandatory=$False,Position=0)]

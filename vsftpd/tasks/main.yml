@@ -10,3 +10,11 @@
      name: "vsftpd"
      state: started
      enabled: yes
+
+ - name: Put configuration from template
+   template:
+     src: vsftpd.j2  
+     dest: /etc/vsftpd/vsftpd.conf
+     backup: true
+     mode: '0600'
+   notify: restart_vsftpd
